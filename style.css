@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #2b1850;
+  border-radius: 20px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.hero {
+  position: relative;
+  height: 70vh;
+  background-image: url("https://www.teahub.io/photos/full/36-365701_non-copyrighted-city-background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* ? NAVBAR */
+.navigation .navbar {
+  backdrop-filter: blur(10px);
+}
+.navigation .navbar .navbar-brand {
+  font-size: 2rem;
+  color: black !important;
+}
+
+.navigation .container .navbar-collapse .navbar-nav {
+  margin-left: auto;
+}
+
+.navigation .container .navbar-collapse .navbar-nav .nav-item a {
+  color: black;
+  transition: 200ms ease-in;
+}
+.navigation .container .navbar-collapse .navbar-nav .nav-item a:hover {
+  transform: scale(1.1);
+}
+
+.hero .hero-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 10vw;
+  backdrop-filter: blur(2px);
+}
+
+/* ? COUNTRIES */
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  width: 300px;
+  height: auto;
+  text-align: center;
+  cursor: pointer;
+  transition: 200ms ease-in;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+/* ? AROUND THE BLUE */
+
+.around-the-blue .image img {
+  border-radius: 10px;
+}
+.around-the-blue .text-right {
+  width: 400px;
+}
+.around-the-blue .text-right * {
+  margin: 20px 0;
+}
+
+/* FOOTER */
+.footer {
+  background-image: url("https://www.teahub.io/photos/full/36-365701_non-copyrighted-city-background.jpg");
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-block: 10px;
+  font-size: 10px;
+}
+
+.footer .links a,
+.footer .rights,
+.footer .contact {
+  color: white;
+}
+
+.footer .contact p {
+  margin: 0;
+}
